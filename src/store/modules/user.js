@@ -37,7 +37,6 @@ const mutations = {
     state.resultAsyncRoutes = resultRoutes
     state.resultAllRoutes = constantRoutes.concat(state.resultAsyncRoutes, anyRoutes)
     //给路由器添加新的路由
-    console.log(state.resultAllRoutes,"state.resultAllRoutes");
     router.addRoutes(state.resultAllRoutes)
     state.ifChange = true
   }
